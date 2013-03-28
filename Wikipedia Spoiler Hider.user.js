@@ -60,6 +60,7 @@ keywords[8] = "Gameplay_and_story";
 keywords[9] = "Plots";
 keywords[10] = "Plot_and_setting";
 keywords[11] = "Series_synopsis";
+keywords[12] = "Synopses"
 
 var headers = document.querySelectorAll("h2 > span");
 if (headers.length > 0) {
