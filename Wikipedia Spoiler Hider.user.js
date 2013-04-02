@@ -39,7 +39,9 @@ var keywords = new Array(
 	"Series_synopsis",
 	"Series_synopses",
 	"Setting_and_characters",
-	"Settings_and_characters"
+	"Settings_and_characters",
+	"Plot_and_characters",
+	"Plots_and_characters"
 );
 
 var h2s = document.querySelectorAll("#mw-content-text > h2");
