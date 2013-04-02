@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id             en.wikipedia.org-dc09f455-deee-4eec-9660-9da7394b1b71@scriptish
 // @name           Wikipedia Spoiler Hider
-// @version        1.1
+// @version        1.2
 // @namespace      
 // @author         xpdite
 // @description    Hides spoilers on Wikipedia
