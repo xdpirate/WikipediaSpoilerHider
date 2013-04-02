@@ -75,6 +75,8 @@ keywords[22] = "Plots_and_settings";
 keywords[23] = "Series_synopsis";
 keywords[24] = "Series_synopses";
 
+var globalCounter = 0;
+
 var headers = document.querySelectorAll("h2 > span");
 if (headers.length > 0) {
     var k;
@@ -104,18 +106,18 @@ function spoilerize(element,isSmall) {
     if (isSmall == 0) {
         inner = element.querySelector("div.content_inner")
         inner.setAttribute("style","display: none !important;");
-        inner.setAttribute("id","wphPlot"+Math.floor(Math.random()*101));
+        inner.setAttribute("id","wphPlot" + globalCounter++);
     } else {
         inner = element.querySelector("div.content_sub_inner")
         inner.setAttribute("style","display: none !important;");
-        inner.setAttribute("id","wphPlot"+Math.floor(Math.random()*101));
+        inner.setAttribute("id","wphPlot"+ globalCounter++);
     }
     
     
     var link;
     link = document.createElement("span");
-    link.id = "togglePlotLink"+Math.floor(Math.random()*101);
-    link.innerHTML = "<b>Click here to show/hide plot information</b>";
+    link.id = "togglePlotLink" + globalCounter++;
+    link.innerHTML = "<b>Toggle potential spoilers <sup>[WSH]</sup></b>";
     link.setAttribute("style","display:inline-block;margin-bottom:10px;color:#00F;padding:5px;border:1px solid black;border-radius:5px;cursor:pointer;");
     
     link.setAttribute("OnClick","var elem=document.getElementById('"+inner.getAttribute("id")+"');if(elem.style.display=='none'){elem.style.display='block'}else{elem.style.display='none'}");
