@@ -6,6 +6,7 @@
 // @author         xpdite
 // @description    Hides spoilers on Wikipedia
 // @include        http://en.wikipedia.org/wiki/*
+// @include        https://en.wikipedia.org/wiki/*
 // @run-at         document-end
 // ==/UserScript==
 var h2s = document.querySelectorAll("#mw-content-text > h2");
