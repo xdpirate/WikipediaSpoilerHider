@@ -41,7 +41,8 @@ var keywords = new Array(
 	"Setting_and_characters",
 	"Settings_and_characters",
 	"Plot_and_characters",
-	"Plots_and_characters"
+	"Plots_and_characters",
+	"Plot_overview"
 );
 
 var h2s = document.querySelectorAll("#mw-content-text > h2");
