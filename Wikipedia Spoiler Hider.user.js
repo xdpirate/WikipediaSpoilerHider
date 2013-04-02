@@ -42,7 +42,9 @@ var keywords = new Array(
 	"Settings_and_characters",
 	"Plot_and_characters",
 	"Plots_and_characters",
-	"Plot_overview"
+	"Plot_overview",
+	"Setting", // I've not been to sure about adding these two keywords earlier, as they seem to be used by 
+	"Settings" // other pages not related to storylines and potential spoilers. We'll see how this pans out.
 );
 
 var h2s = document.querySelectorAll("#mw-content-text > h2");
