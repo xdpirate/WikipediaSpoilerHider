@@ -38,15 +38,17 @@ var keywords = new Array(
 	"Plots_and_settings",
 	"Series_synopsis",
 	"Series_synopses",
+	"Story_and_characters",
+	"Stories_and_characters",
 	"Setting_and_characters",
 	"Settings_and_characters",
 	"Plot_and_characters",
 	"Plots_and_characters",
-	"Plot_overview",
-	"Setting",  // I've not been to sure about adding these two keywords earlier, as they seem to be used by 
-	"Settings", // other pages not related to storylines and potential spoilers. We'll see how this pans out.
 	"Playable_characters",
-	"Enemy_characters"
+	"Enemy_characters",
+	"Setting",  // I've not been too sure about adding these two keywords earlier, as they seem to be used by 
+	"Settings", // other pages not related to storylines and potential spoilers. We'll see how this pans out.
+	"Plot_overview"
 );
 
 var h2s = document.querySelectorAll("#mw-content-text > h2");
