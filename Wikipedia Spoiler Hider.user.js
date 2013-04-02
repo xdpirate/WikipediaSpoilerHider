@@ -50,18 +50,30 @@ if (h3s.length > 0){
 
 var keywords = new Array();
 keywords[0] = "Plot";
-keywords[1] = "Story";
-keywords[2] = "Storyline";
-keywords[3] = "Synopsis";
-keywords[4] = "Plot_summary";
-keywords[5] = "Plot_synopsis";
-keywords[6] = "Characters";
-keywords[7] = "Main_characters";
-keywords[8] = "Gameplay_and_story";
-keywords[9] = "Plots";
-keywords[10] = "Plot_and_setting";
-keywords[11] = "Series_synopsis";
-keywords[12] = "Synopses"
+keywords[1] = "Plots";
+keywords[2] = "Story";
+keywords[3] = "Stories";
+keywords[4] = "Storyline";
+keywords[5] = "Storylines";
+keywords[6] = "Synopsis";
+keywords[7] = "Synopses"
+keywords[8] = "Plot_summary";
+keywords[9] = "Plot_summaries";
+keywords[10] = "Plot_synopsis";
+keywords[11] = "Plot_synopses";
+keywords[12] = "Characters";
+keywords[13] = "Main_characters";
+keywords[14] = "Gameplay_and_story";
+keywords[15] = "Gameplay_and_stories";
+keywords[16] = "Gameplay_and_storyline";
+keywords[17] = "Gameplay_and_storylines";
+keywords[18] = "Gameplay_and_story_line";
+keywords[19] = "Plot_and_setting";
+keywords[20] = "Plots_and_setting";
+keywords[21] = "Plot_and_settings";
+keywords[22] = "Plots_and_settings";
+keywords[23] = "Series_synopsis";
+keywords[24] = "Series_synopses";
 
 var headers = document.querySelectorAll("h2 > span");
 if (headers.length > 0) {
