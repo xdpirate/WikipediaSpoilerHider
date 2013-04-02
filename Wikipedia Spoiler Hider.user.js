@@ -9,6 +9,38 @@
 // @include        https://en.wikipedia.org/wiki/*
 // @run-at         document-end
 // ==/UserScript==
+var keywords = new Array();
+keywords[0] = "Plot";
+keywords[1] = "Plots";
+keywords[2] = "Story";
+keywords[3] = "Stories";
+keywords[4] = "Storyline";
+keywords[5] = "Storylines";
+keywords[6] = "Synopsis";
+keywords[7] = "Synopses";
+keywords[8] = "Plot_summary";
+keywords[9] = "Plot_summaries";
+keywords[10] = "Plot_synopsis";
+keywords[11] = "Plot_synopses";
+keywords[12] = "Characters";
+keywords[13] = "Main_characters";
+keywords[14] = "Gameplay_and_story";
+keywords[15] = "Gameplay_and_stories";
+keywords[16] = "Gameplay_and_storyline";
+keywords[17] = "Gameplay_and_storylines";
+keywords[18] = "Gameplay_and_story_line";
+keywords[19] = "Gameplay_and_story_lines";
+keywords[20] = "Plot_and_setting";
+keywords[21] = "Plots_and_setting";
+keywords[22] = "Plot_and_settings";
+keywords[23] = "Plots_and_settings";
+keywords[24] = "Series_synopsis";
+keywords[25] = "Series_synopses";
+keywords[26] = "Setting_and_characters";
+keywords[27] = "Settings_and_characters";
+
+var globalCounter = 0;
+
 var h2s = document.querySelectorAll("#mw-content-text > h2");
 if (h2s.length > 0){
   var i, dOuter, dInner;
@@ -47,36 +79,6 @@ if (h3s.length > 0){
     }
   } 
 }
-
-var keywords = new Array();
-keywords[0] = "Plot";
-keywords[1] = "Plots";
-keywords[2] = "Story";
-keywords[3] = "Stories";
-keywords[4] = "Storyline";
-keywords[5] = "Storylines";
-keywords[6] = "Synopsis";
-keywords[7] = "Synopses";
-keywords[8] = "Plot_summary";
-keywords[9] = "Plot_summaries";
-keywords[10] = "Plot_synopsis";
-keywords[11] = "Plot_synopses";
-keywords[12] = "Characters";
-keywords[13] = "Main_characters";
-keywords[14] = "Gameplay_and_story";
-keywords[15] = "Gameplay_and_stories";
-keywords[16] = "Gameplay_and_storyline";
-keywords[17] = "Gameplay_and_storylines";
-keywords[18] = "Gameplay_and_story_line";
-keywords[19] = "Gameplay_and_story_lines";
-keywords[20] = "Plot_and_setting";
-keywords[21] = "Plots_and_setting";
-keywords[22] = "Plot_and_settings";
-keywords[23] = "Plots_and_settings";
-keywords[24] = "Series_synopsis";
-keywords[25] = "Series_synopses";
-
-var globalCounter = 0;
 
 var headers = document.querySelectorAll("h2 > span");
 if (headers.length > 0) {
