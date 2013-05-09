@@ -10,43 +10,43 @@
 var globalCounter = 0;
 
 var keywords = new Array(
-	"Plot",
-	"Plots",
-	"Story",
-	"Stories",
-	"Storyline",
-	"Storylines",
-	"Synopsis",
-	"Synopses",
-	"Plot_summary",
-	"Plot_summaries",
-	"Plot_synopsis",
-	"Plot_synopses",
-	"Characters",
-	"Main_characters",
-	"Gameplay_and_story",
-	"Gameplay_and_stories",
-	"Gameplay_and_storyline",
-	"Gameplay_and_storylines",
-	"Gameplay_and_story_line",
-	"Gameplay_and_story_lines",
-	"Plot_and_setting",
-	"Plots_and_setting",
-	"Plot_and_settings",
-	"Plots_and_settings",
-	"Series_synopsis",
-	"Series_synopses",
-	"Story_and_characters",
-	"Stories_and_characters",
-	"Setting_and_characters",
-	"Settings_and_characters",
-	"Plot_and_characters",
-	"Plots_and_characters",
-	"Playable_characters",
-	"Enemy_characters",
-	"Setting",  // I've not been too sure about adding these two keywords earlier, as they seem to be used by 
-	"Settings", // other pages not related to storylines and potential spoilers. We'll see how this pans out.
-	"Plot_overview"
+    "Plot",
+    "Plots",
+    "Story",
+    "Stories",
+    "Storyline",
+    "Storylines",
+    "Synopsis",
+    "Synopses",
+    "Plot_summary",
+    "Plot_summaries",
+    "Plot_synopsis",
+    "Plot_synopses",
+    "Characters",
+    "Main_characters",
+    "Gameplay_and_story",
+    "Gameplay_and_stories",
+    "Gameplay_and_storyline",
+    "Gameplay_and_storylines",
+    "Gameplay_and_story_line",
+    "Gameplay_and_story_lines",
+    "Plot_and_setting",
+    "Plots_and_setting",
+    "Plot_and_settings",
+    "Plots_and_settings",
+    "Series_synopsis",
+    "Series_synopses",
+    "Story_and_characters",
+    "Stories_and_characters",
+    "Setting_and_characters",
+    "Settings_and_characters",
+    "Plot_and_characters",
+    "Plots_and_characters",
+    "Playable_characters",
+    "Enemy_characters",
+    "Setting",  // I've not been too sure about adding these two keywords earlier, as they seem to be used by 
+    "Settings", // other pages not related to storylines and potential spoilers. We'll see how this pans out.
+    "Plot_overview"
 );
 
 var h2s = document.querySelectorAll("#mw-content-text > h2");
@@ -136,11 +136,11 @@ function spoilerize(element,isSmall) {
 }
 
 function setToggle(divId) {
-	var elem=document.getElementById(divId);
-	
-	if(elem.style.display=='none') {
-		elem.style.display='block';
-	} else {
-		elem.style.display='none';
-	}
+    var elem=document.getElementById(divId);
+    
+    if(elem.style.display=='none') {
+        elem.style.display='block';
+    } else {
+        elem.style.display='none';
+    }
 }
