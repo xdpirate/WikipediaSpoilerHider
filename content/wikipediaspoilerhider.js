@@ -131,7 +131,7 @@ function spoilerize(element,isSmall) {
     link.innerHTML = "<b>Toggle potential spoilers <sup>[WSH]</sup></b>";
     link.setAttribute("style","display:inline-block;margin-bottom:10px;color:#00F;padding:5px;border:1px solid black;border-radius:5px;cursor:pointer;");
     
-	link.addEventListener("click", function(){setToggle(inner.getAttribute("id"))}, true);
+    link.addEventListener("click", function(){setToggle(inner.getAttribute("id"))}, true);
     outer.insertBefore(link, inner);
 }
 
