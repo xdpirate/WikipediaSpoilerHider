@@ -10,14 +10,14 @@
 (function() {
     var wshGlobalCounter = 0;
     var wshKeywords = new Array("Plot","Plots","Story","Stories","Storyline","Storylines","Synopsis","Synopses",
-                             "Plot_summary","Plot_summaries","Plot_synopsis","Plot_synopses","Characters",
-                             "Main_characters","Gameplay_and_story","Gameplay_and_stories","Gameplay_and_storyline",
-                             "Gameplay_and_storylines","Gameplay_and_story_line","Gameplay_and_story_lines",
-                             "Plot_and_setting","Plots_and_setting","Plot_and_settings","Plots_and_settings",
-                             "Series_synopsis","Series_synopses","Story_and_characters","Stories_and_characters",
-                             "Setting_and_characters","Settings_and_characters","Plot_and_characters",
-                             "Plots_and_characters","Playable_characters","Enemy_characters","Setting","Settings",
-                             "Plot_overview","Characters_and_organizations");
+                                "Plot_summary","Plot_summaries","Plot_synopsis","Plot_synopses","Characters",
+                                "Main_characters","Gameplay_and_story","Gameplay_and_stories","Gameplay_and_storyline",
+                                "Gameplay_and_storylines","Gameplay_and_story_line","Gameplay_and_story_lines",
+                                "Plot_and_setting","Plots_and_setting","Plot_and_settings","Plots_and_settings",
+                                "Series_synopsis","Series_synopses","Story_and_characters","Stories_and_characters",
+                                "Setting_and_characters","Settings_and_characters","Plot_and_characters",
+                                "Plots_and_characters","Playable_characters","Enemy_characters","Setting","Settings",
+                                "Plot_overview","Characters_and_organizations");
 
     var h2s = document.querySelectorAll("#mw-content-text > h2");
     if (h2s.length > 0){
