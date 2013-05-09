@@ -1,12 +1,10 @@
 // ==UserScript==
-// @id             en.wikipedia.org-dc09f455-deee-4eec-9660-9da7394b1b71@scriptish
+// @id             dc09f455-deee-4eec-9660-9da7394b1b71
 // @name           Wikipedia Spoiler Hider
 // @version        1.2
-// @namespace      
 // @author         xpdite
-// @description    Hides spoilers on Wikipedia
-// @include        http://en.wikipedia.org/wiki/*
-// @include        https://en.wikipedia.org/wiki/*
+// @description    Hides potential spoilers on Wikipedia
+// @include        http*://en.wikipedia.org/wiki/*
 // @run-at         document-end
 // ==/UserScript==
 var globalCounter = 0;
