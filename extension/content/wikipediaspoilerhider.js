@@ -17,7 +17,7 @@
                              "Series_synopsis","Series_synopses","Story_and_characters","Stories_and_characters",
                              "Setting_and_characters","Settings_and_characters","Plot_and_characters",
                              "Plots_and_characters","Playable_characters","Enemy_characters","Setting","Settings",
-                             "Plot_overview");
+                             "Plot_overview","Characters_and_organizations");
 
     var h2s = document.querySelectorAll("#mw-content-text > h2");
     if (h2s.length > 0){
