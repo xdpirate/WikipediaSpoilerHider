@@ -1,7 +1,7 @@
 // ==UserScript==
 // @id             dc09f455-deee-4eec-9660-9da7394b1b71
 // @name           Wikipedia Spoiler Hider
-// @version        1.2
+// @version        1.2.1
 // @author         xpdite
 // @description    Hides potential spoilers on Wikipedia
 // @include        http*://en.wikipedia.org/wiki/*
@@ -131,6 +131,16 @@ function spoilerize(element,isSmall) {
     link.innerHTML = "<b>Toggle potential spoilers <sup>[WSH]</sup></b>";
     link.setAttribute("style","display:inline-block;margin-bottom:10px;color:#00F;padding:5px;border:1px solid black;border-radius:5px;cursor:pointer;");
     
-    link.setAttribute("OnClick","var elem=document.getElementById('"+inner.getAttribute("id")+"');if(elem.style.display=='none'){elem.style.display='block'}else{elem.style.display='none'}");
+	link.addEventListener("click", function(){setToggle(inner.getAttribute("id"))}, true);
     outer.insertBefore(link, inner);
+}
+
+function setToggle(divId) {
+	var elem=document.getElementById(divId);
+	
+	if(elem.style.display=='none') {
+		elem.style.display='block';
+	} else {
+		elem.style.display='none';
+	}
 }
