@@ -11,5 +11,8 @@ I've tested it on hundreds of pages for movies, books and video games, and it's 
 
 Thanks to Jefferson Scher for the help with organizing Wikipedia's shitty HTML.
 
-UserScripts.org page:
+Mozilla Addons (For Firefox/Mozilla users)
+https://addons.mozilla.org/en-US/firefox/addon/wikipediaspoilerhider/
+
+UserScripts page (For Chrome and Firefox users with Greasemonkey/Scriptish):
 http://userscripts.org/scripts/show/153934
