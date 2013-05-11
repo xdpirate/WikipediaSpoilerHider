@@ -52,7 +52,7 @@ contentLoad: function(e) {
 
 	if (
 		wikipediaspoilerhider_gmCompiler.isGreasemonkeyable(href)
-		&& ( /^http.*:\/\/en\.wikipedia\.org\/wiki\/.*$/.test(href) )
+		&& ( /^https?:\/\/.*\.wikipedia\.org\/wiki\/.*$/.test(href) )
 		&& true
 	) {
 		var script=wikipediaspoilerhider_gmCompiler.getUrlContents(
