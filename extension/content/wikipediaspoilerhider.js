@@ -9,15 +9,15 @@
 // ==/UserScript==
 (function() {
     var wshGlobalCounter = 0;
-    var wshKeywords = new Array("Plot","Plots","Story","Stories","Storyline","Storylines","Synopsis","Synopses",
-                                "Plot_summary","Plot_summaries","Plot_synopsis","Plot_synopses","Characters",
-                                "Main_characters","Gameplay_and_story","Gameplay_and_stories","Gameplay_and_storyline",
-                                "Gameplay_and_storylines","Gameplay_and_story_line","Gameplay_and_story_lines",
-                                "Plot_and_setting","Plots_and_setting","Plot_and_settings","Plots_and_settings",
-                                "Series_synopsis","Series_synopses","Story_and_characters","Stories_and_characters",
-                                "Setting_and_characters","Settings_and_characters","Plot_and_characters",
-                                "Plots_and_characters","Playable_characters","Enemy_characters","Setting","Settings",
-                                "Plot_overview","Characters_and_organizations");
+    var wshKeywords = new Array("plot","plots","story","stories","storyline","storylines","synopsis","synopses",
+                                "plot_summary","plot_summaries","plot_synopsis","plot_synopses","characters",
+                                "main_characters","gameplay_and_story","gameplay_and_stories","gameplay_and_storyline",
+                                "gameplay_and_storylines","gameplay_and_story_line","gameplay_and_story_lines",
+                                "plot_and_setting","plots_and_setting","plot_and_settings","plots_and_settings",
+                                "series_synopsis","series_synopses","story_and_characters","stories_and_characters",
+                                "setting_and_characters","settings_and_characters","plot_and_characters",
+                                "plots_and_characters","playable_characters","enemy_characters","setting","settings",
+                                "plot_overview","characters_and_organizations");
 
     var h2s = document.querySelectorAll("#mw-content-text > h2");
     if (h2s.length > 0){
@@ -63,9 +63,11 @@
         var k;
         for (k=0; k<headers.length; k++) {
             var id = headers[k].getAttribute("id");
-            if (wshKeywords.indexOf(id) != -1) {
-                spoilerize(headers[k].parentNode.parentNode,0);
-            }
+			if(id !== null) {
+				if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
+					spoilerize(headers[k].parentNode.parentNode,0);
+				}
+			}
         }
     }
 
@@ -74,9 +76,11 @@
         var l;
         for (l=0; l<smallheaders.length; l++) {
             var id = smallheaders[l].getAttribute("id");
-            if (wshKeywords.indexOf(id) != -1) {
-                spoilerize(smallheaders[l].parentNode.parentNode,1);
-            }
+			if(id !== null) {
+				if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
+					spoilerize(smallheaders[l].parentNode.parentNode,1);
+				}
+			}
         }
     }
 
