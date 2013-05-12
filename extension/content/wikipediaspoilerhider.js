@@ -8,21 +8,6 @@
 // @run-at         document-end
 // ==/UserScript==
 
-// ("Ä", ".C3.84");
-// ("ä", ".C3.A4");
-
-// ("Æ, ".C3.86");
-// ("æ", ".C3.A6");
-
-// ("Ö, ".C3.96");
-// ("ö".C3.B6");
-
-// ("Ø", ".C3.98");
-// ("ø".C3.B8");
-
-// ("Å, ".C3.85");
-// ("å ".C3.A5");
-
 (function () {
     var wshGlobalCounter = 0, wshKeywords, wshToggleText, currentURL;
     currentURL = document.URL.toLowerCase();
@@ -96,33 +81,25 @@
         }
     }
 
-    var headers = document.querySelectorAll("h2 > span");
-    if (headers.length > 0) {
-        var k;
-        for (k = 0; k < headers.length; k++) {
-            var id = headers[k].getAttribute("id");
-            if (id !== null) {
-                if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
-                    spoilerize(headers[k].parentNode.parentNode, 0);
+    parseHeaders("h2 > span", 0);
+    parseHeaders("h3 > span", 1);
+    
+    function parseHeaders(queryString, isSmall) {
+        var headers = document.querySelectorAll(queryString);
+            if (headers.length > 0) {
+                var i;
+                for (i = 0; i < headers.length; i++) {
+                    var id = headers[i].getAttribute("id");
+                    if (id !== null) {
+                        if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
+                            spoilerize(headers[i].parentNode.parentNode, isSmall);
+                        }
+                    }
                 }
             }
-        }
     }
 
-    var smallheaders = document.querySelectorAll("h3 > span");
-    if (smallheaders.length > 0) {
-        var l;
-        for (l = 0; l < smallheaders.length; l++) {
-            var id = smallheaders[l].getAttribute("id");
-            if(id !== null) {
-                if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
-                    spoilerize(smallheaders[l].parentNode.parentNode,1);
-                }
-            }
-        }
-    }
-
-    function spoilerize(element,isSmall) {
+    function spoilerize(element, isSmall) {
         var outer = element;
         var inner;
         
