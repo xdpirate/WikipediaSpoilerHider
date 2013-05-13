@@ -44,7 +44,7 @@
     var i, dOuter, dInner;
     var h2s = document.querySelectorAll("#mw-content-text > h2");
     if (h2s.length > 0) {
-        for (i = 0; i < h2s.length - 1; i++) {
+        for (i = 0; i < h2s.length; i++) {
             dOuter = document.createElement("div");
             dOuter.id = "content_outer_" + i;
             dOuter.className = "content_outer";
