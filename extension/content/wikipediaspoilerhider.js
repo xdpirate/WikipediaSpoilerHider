@@ -17,24 +17,25 @@
         // English
         wshToggleText = "Toggle potential spoilers";
         wshKeywords = ["plot", "plots", "story", "stories", "storyline", "storylines", "synopsis", "synopses",
-                       "plot_summary", "plot_summaries", "plot_synopsis", "plot_synopses", "characters",
-                       "main_characters", "gameplay_and_story", "gameplay_and_stories", "gameplay_and_storyline",
-                       "gameplay_and_storylines", "gameplay_and_story_line", "gameplay_and_story_lines",
-                       "plot_and_setting", "plots_and_setting", "plot_and_settings", "plots_and_settings",
-                       "series_synopsis", "series_synopses", "story_and_characters", "stories_and_characters",
-                       "setting_and_characters", "settings_and_characters", "plot_and_characters",
-                       "plots_and_characters", "playable_characters", "enemy_characters", "setting", "settings",
-                       "plot_overview", "characters_and_organizations", "scenario"];
+                       "plot summary", "plot summaries", "plot synopsis", "plot synopses", "characters",
+                       "main characters", "gameplay and story", "gameplay and stories", "gameplay and storyline",
+                       "gameplay and storylines", "gameplay and story line", "gameplay and story lines",
+                       "plot and setting", "plots and setting", "plot and settings", "plots and settings",
+                       "series synopsis", "series synopses", "story and characters", "stories and characters",
+                       "setting and characters", "settings and characters", "plot and characters",
+                       "plots and characters", "playable characters", "enemy characters", "setting", "settings",
+                       "plot overview", "characters and organizations", "scenario"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
-        wshKeywords = ["historie", "handling", "handlinger", "figurer", "figurer_i_spillet", "sammendrag",
-                       "rollefigurer", "scenario", "plot", "plot", "hovedfigurer", "fortelling"];
+        wshKeywords = ["historie", "handling", "handlinger", "figurer", "figurer i spillet", "sammendrag",
+                       "rollefigurer", "scenario", "plot", "plot", "hovedfigurer", "fortelling", "viktige figurer",
+                       "synopsis"];
     } else if (currentURL.indexOf("sv.wikipedia.org") !== -1) {
         // Swedish
         wshToggleText = "Visa eller göm möjliga spoilers";
-        wshKeywords = ["handling", "karakt.c3.a4rer", "referat", "Detaljerat_referat", "scenario", "plot",
-                       "ber.c3.a4ttelse", "handling_och_milj.c3.b6"];
+        wshKeywords = ["handling", "karaktärer", "referat", "detaljerat referat", "scenario", "plot",
+                       "berättelse", "handling och miljö", "synopsis"];
     } else {
         // If running on a Wikipedia version that is not yet supported, quit the script
         return;
@@ -54,7 +55,7 @@
             dOuter.appendChild(h2s[i]);
             dOuter.appendChild(dInner);
 
-            while (dOuter.nextSibling && dOuter.nextSibling.nodeName != "H2") {
+            while (dOuter.nextSibling && dOuter.nextSibling.nodeName.toLowerCase() != "h2") {
                 dInner.appendChild(dOuter.nextSibling);
             }
         }
@@ -75,7 +76,7 @@
             dOuter.appendChild(h3s[i]);
             dOuter.appendChild(dInner);
 
-            while (dOuter.nextSibling && dOuter.nextSibling.nodeName != "H3") {
+            while (dOuter.nextSibling && dOuter.nextSibling.nodeName.toLowerCase() != "h3") {
                 dInner.appendChild(dOuter.nextSibling);
             }
         }
@@ -89,7 +90,7 @@
             if (headers.length > 0) {
                 var i;
                 for (i = 0; i < headers.length; i++) {
-                    var id = headers[i].getAttribute("id");
+                    var id = headers[i].innerHTML.trim();
                     if (id !== null) {
                         if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
                             spoilerize(headers[i].parentNode.parentNode, isSmall);
