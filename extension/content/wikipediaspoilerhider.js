@@ -9,6 +9,8 @@
 // @run-at         document-end
 // ==/UserScript==
 
+//NOTE TO SELF: Published AMO version is git commit 45346e2029aa08d4bdf129e610f5d4104fa21afa
+
 (function () {
     var wshGlobalCounter = 0, wshKeywords, wshToggleText, currentURL;
     currentURL = document.URL.toLowerCase();
