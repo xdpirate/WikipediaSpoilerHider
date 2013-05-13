@@ -37,7 +37,7 @@
         wshToggleText = "Visa eller göm möjliga spoilers";
         wshKeywords = ["handling", "karaktärer", "referat", "detaljerat referat", "scenario", "plot",
                        "berättelse", "handling och miljö", "synopsis", "spelbara rollfigurer", "andra rollfigurer",
-					   "organisationer och grupper", "scenarios"];
+					   "organisationer och grupper", "scenarios", "sammanfattning"];
     } else {
         // If running on a Wikipedia version that is not yet supported, quit the script
         return;
