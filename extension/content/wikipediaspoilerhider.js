@@ -5,6 +5,7 @@
 // @author         xpdite
 // @description    Hides potential spoilers on Wikipedia
 // @include        /^https?://.*\.wikipedia\.org/wiki/.*$/
+// @grant          none
 // @run-at         document-end
 // ==/UserScript==
 
