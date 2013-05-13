@@ -25,18 +25,19 @@
                        "series synopsis", "series synopses", "story and characters", "stories and characters",
                        "setting and characters", "settings and characters", "plot and characters",
                        "plots and characters", "playable characters", "enemy characters", "setting", "settings",
-                       "plot overview", "characters and organizations", "scenario"];
+                       "plot overview", "characters and organizations", "scenario", "scenarios"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
         wshKeywords = ["historie", "handling", "handlinger", "figurer", "figurer i spillet", "sammendrag",
-                       "rollefigurer", "scenario", "plot", "plot", "hovedfigurer", "fortelling", "viktige figurer",
-                       "synopsis"];
+                       "rollefigurer", "scenario", "plot", "plott", "hovedfigurer", "fortelling", "viktige figurer",
+                       "synopsis", "scenarios", "referat"];
     } else if (currentURL.indexOf("sv.wikipedia.org") !== -1) {
         // Swedish
         wshToggleText = "Visa eller göm möjliga spoilers";
         wshKeywords = ["handling", "karaktärer", "referat", "detaljerat referat", "scenario", "plot",
-                       "berättelse", "handling och miljö", "synopsis"];
+                       "berättelse", "handling och miljö", "synopsis", "spelbara rollfigurer", "andra rollfigurer",
+					   "organisationer och grupper", "scenarios"];
     } else {
         // If running on a Wikipedia version that is not yet supported, quit the script
         return;
