@@ -9,8 +9,6 @@
 // @run-at         document-end
 // ==/UserScript==
 
-//NOTE TO SELF: Published AMO version is git commit 45346e2029aa08d4bdf129e610f5d4104fa21afa
-
 (function () {
     var wshGlobalCounter = 0, wshKeywords, wshToggleText, currentURL;
     currentURL = document.URL.toLowerCase();
@@ -27,7 +25,8 @@
                        "series synopsis", "series synopses", "story and characters", "stories and characters",
                        "setting and characters", "settings and characters", "plot and characters",
                        "plots and characters", "playable characters", "enemy characters", "setting", "settings",
-                       "plot overview", "characters and organizations", "scenario", "scenarios"];
+                       "plot overview", "characters and organizations", "scenario", "scenarios",
+                       "cast and characters"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
@@ -39,7 +38,7 @@
         wshToggleText = "Visa eller göm möjliga spoilers";
         wshKeywords = ["handling", "karaktärer", "referat", "detaljerat referat", "scenario", "plot",
                        "berättelse", "handling och miljö", "synopsis", "spelbara rollfigurer", "andra rollfigurer",
-					   "organisationer och grupper", "scenarios", "sammanfattning"];
+                       "organisationer och grupper", "scenarios", "sammanfattning"];
     } else {
         // If running on a Wikipedia version that is not yet supported, quit the script
         return;
