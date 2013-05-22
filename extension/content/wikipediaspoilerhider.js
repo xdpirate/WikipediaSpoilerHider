@@ -9,6 +9,8 @@
 // @run-at         document-end
 // ==/UserScript==
 
+// Added phrase "cast and characters"
+
 (function () {
     var wshGlobalCounter = 0, wshKeywords, wshToggleText, currentURL;
     currentURL = document.URL.toLowerCase();
@@ -90,17 +92,17 @@
     
     function parseHeaders(queryString, isSmall) {
         var headers = document.querySelectorAll(queryString);
-            if (headers.length > 0) {
-                var i;
-                for (i = 0; i < headers.length; i++) {
-                    var id = headers[i].innerHTML.trim();
-                    if (id !== null) {
-                        if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
-                            spoilerize(headers[i].parentNode.parentNode, isSmall);
-                        }
-                    }
-                }
-            }
+		if (headers.length > 0) {
+			var i;
+			for (i = 0; i < headers.length; i++) {
+				var id = headers[i].innerHTML.trim();
+				if (id !== null) {
+					if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
+						spoilerize(headers[i].parentNode.parentNode, isSmall);
+					}
+				}
+			}
+		}
     }
 
     function spoilerize(element, isSmall) {
