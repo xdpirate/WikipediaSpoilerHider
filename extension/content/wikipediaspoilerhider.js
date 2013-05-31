@@ -9,7 +9,8 @@
 // @run-at         document-end
 // ==/UserScript==
 
-// Added phrase "cast and characters"
+// Added phrase "cast and characters", "summary and plot"
+// Remove phrase "plott" from norwegian wikipedia
 
 (function () {
     var wshGlobalCounter = 0, wshKeywords, wshToggleText, currentURL;
@@ -28,12 +29,12 @@
                        "setting and characters", "settings and characters", "plot and characters",
                        "plots and characters", "playable characters", "enemy characters", "setting", "settings",
                        "plot overview", "characters and organizations", "scenario", "scenarios",
-                       "cast and characters"];
+                       "cast and characters", "summary and plot"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
         wshKeywords = ["historie", "handling", "handlinger", "figurer", "figurer i spillet", "sammendrag",
-                       "rollefigurer", "scenario", "plot", "plott", "hovedfigurer", "fortelling", "viktige figurer",
+                       "rollefigurer", "scenario", "plot", "hovedfigurer", "fortelling", "viktige figurer",
                        "synopsis", "scenarios", "referat"];
     } else if (currentURL.indexOf("sv.wikipedia.org") !== -1) {
         // Swedish
