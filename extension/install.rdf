@@ -4,7 +4,7 @@
 			<em:id>{dc09f455-deee-4eec-9660-9da7394b1b71}</em:id>
 			<em:name>Wikipedia Spoiler Hider</em:name>
 			<em:type>2</em:type>
-			<em:version>1.2.3</em:version>
+			<em:version>1.2.4</em:version>
 			<em:description>Hides potential spoilers on Wikipedia</em:description>
 			<em:creator>xdpirate</em:creator>
 			<em:homepageURL>https://github.com/xdpirate/WikipediaSpoilerHider</em:homepageURL>

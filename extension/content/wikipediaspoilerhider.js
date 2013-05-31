@@ -1,20 +1,13 @@
 ﻿// ==UserScript==
 // @id             dc09f455-deee-4eec-9660-9da7394b1b71
 // @name           Wikipedia Spoiler Hider
-// @version        1.2.3
+// @version        1.2.4
 // @author         xpdite
 // @description    Hides potential spoilers on Wikipedia
 // @include        /^https?://.*\.wikipedia\.org/wiki/.*$/
 // @grant          none
 // @run-at         document-end
 // ==/UserScript==
-
-// Added phrases:
-// "cast and characters", "summary and plot", "character/game list", "non-playable characters", "bosses", "other characters",
-// "main player characters", "secondary player characters", "antagonist", "antagonists", "significance of the title",
-// "protagonist", "protagonists", "ending", "endings", "episodes", "premise", "the cases", "recurring characters"
-
-// Remove phrase "plott" from norwegian wikipedia
 
 (function () {
     var wshGlobalCounter = 0, wshKeywords, wshToggleText, currentURL;
