@@ -9,7 +9,7 @@
 // @run-at         document-end
 // ==/UserScript==
 
-// Added phrases "cast and characters", "summary and plot", "character/game list"
+// Added phrases "cast and characters", "summary and plot", "character/game list", "non-playable characters", "bosses"
 // Remove phrase "plott" from norwegian wikipedia
 
 (function () {
@@ -29,7 +29,8 @@
                        "setting and characters", "settings and characters", "plot and characters",
                        "plots and characters", "playable characters", "enemy characters", "setting", "settings",
                        "plot overview", "characters and organizations", "scenario", "scenarios",
-                       "cast and characters", "summary and plot", "character/game list"];
+                       "cast and characters", "summary and plot", "character/game list", "non-playable characters",
+					   "bosses"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
