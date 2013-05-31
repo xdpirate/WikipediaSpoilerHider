@@ -9,7 +9,11 @@
 // @run-at         document-end
 // ==/UserScript==
 
-// Added phrases "cast and characters", "summary and plot", "character/game list", "non-playable characters", "bosses", "other characters"
+// Added phrases:
+// "cast and characters", "summary and plot", "character/game list", "non-playable characters", "bosses", "other characters",
+// "main player characters", "secondary player characters", "antagonist", "antagonists", "significance of the title",
+// "protagonist", "protagonists", "ending", "endings"
+
 // Remove phrase "plott" from norwegian wikipedia
 
 (function () {
@@ -30,7 +34,9 @@
                        "plots and characters", "playable characters", "enemy characters", "setting", "settings",
                        "plot overview", "characters and organizations", "scenario", "scenarios",
                        "cast and characters", "summary and plot", "character/game list", "non-playable characters",
-					   "bosses", "other characters"];
+                       "bosses", "other characters", "main player characters", "secondary player characters",
+                       "antagonist", "antagonists", "significance of the title", "protagonist", "protagonists",
+                       "ending", "endings"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
@@ -94,17 +100,17 @@
     
     function parseHeaders(queryString, isSmall) {
         var headers = document.querySelectorAll(queryString);
-		if (headers.length > 0) {
-			var i;
-			for (i = 0; i < headers.length; i++) {
-				var id = headers[i].innerHTML.trim();
-				if (id !== null) {
-					if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
-						spoilerize(headers[i].parentNode.parentNode, isSmall);
-					}
-				}
-			}
-		}
+        if (headers.length > 0) {
+            var i;
+            for (i = 0; i < headers.length; i++) {
+                var id = headers[i].innerHTML.trim();
+                if (id !== null) {
+                    if (wshKeywords.indexOf(id.toLowerCase()) != -1) {
+                        spoilerize(headers[i].parentNode.parentNode, isSmall);
+                    }
+                }
+            }
+        }
     }
 
     function spoilerize(element, isSmall) {
