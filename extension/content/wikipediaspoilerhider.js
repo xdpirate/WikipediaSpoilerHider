@@ -12,7 +12,7 @@
 // Added phrases:
 // "cast and characters", "summary and plot", "character/game list", "non-playable characters", "bosses", "other characters",
 // "main player characters", "secondary player characters", "antagonist", "antagonists", "significance of the title",
-// "protagonist", "protagonists", "ending", "endings"
+// "protagonist", "protagonists", "ending", "endings", "episodes", "premise", "the cases", "recurring characters"
 
 // Remove phrase "plott" from norwegian wikipedia
 
@@ -36,7 +36,7 @@
                        "cast and characters", "summary and plot", "character/game list", "non-playable characters",
                        "bosses", "other characters", "main player characters", "secondary player characters",
                        "antagonist", "antagonists", "significance of the title", "protagonist", "protagonists",
-                       "ending", "endings"];
+                       "ending", "endings", "episodes", "premise", "the cases", "recurring characters"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
