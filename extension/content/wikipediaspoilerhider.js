@@ -29,7 +29,8 @@
                        "cast and characters", "summary and plot", "character/game list", "non-playable characters",
                        "bosses", "other characters", "main player characters", "secondary player characters",
                        "antagonist", "antagonists", "significance of the title", "protagonist", "protagonists",
-                       "ending", "endings", "episodes", "premise", "the cases", "recurring characters"];
+                       "ending", "endings", "episodes", "premise", "the cases", "recurring characters",
+                       "story and setting"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
