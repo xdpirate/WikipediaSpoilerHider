@@ -30,7 +30,7 @@
                        "bosses", "other characters", "main player characters", "secondary player characters",
                        "antagonist", "antagonists", "significance of the title", "protagonist", "protagonists",
                        "ending", "endings", "episodes", "premise", "the cases", "recurring characters",
-                       "story and setting", "themes and analysis", "trivia", "summary of the film"];
+                       "story and setting", "themes and analysis", "trivia", "summary of the film", "story development"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
