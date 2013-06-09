@@ -30,19 +30,19 @@
                        "bosses", "other characters", "main player characters", "secondary player characters",
                        "antagonist", "antagonists", "significance of the title", "protagonist", "protagonists",
                        "ending", "endings", "episodes", "premise", "the cases", "recurring characters",
-                       "story and setting", "themes and analysis"];
+                       "story and setting", "themes and analysis", "trivia"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
         wshKeywords = ["historie", "handling", "handlinger", "figurer", "figurer i spillet", "sammendrag",
                        "rollefigurer", "scenario", "plot", "hovedfigurer", "fortelling", "viktige figurer",
-                       "synopsis", "scenarios", "referat"];
+                       "synopsis", "scenarios", "referat", "trivia"];
     } else if (currentURL.indexOf("sv.wikipedia.org") !== -1) {
         // Swedish
         wshToggleText = "Visa eller göm möjliga spoilers";
         wshKeywords = ["handling", "karaktärer", "referat", "detaljerat referat", "scenario", "plot",
                        "berättelse", "handling och miljö", "synopsis", "spelbara rollfigurer", "andra rollfigurer",
-                       "organisationer och grupper", "scenarios", "sammanfattning"];
+                       "organisationer och grupper", "scenarios", "sammanfattning", "trivia"];
     } else {
         // If running on a Wikipedia version that is not yet supported, quit the script
         return;
