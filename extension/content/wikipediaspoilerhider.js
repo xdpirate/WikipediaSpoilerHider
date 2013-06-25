@@ -31,7 +31,8 @@
                        "antagonist", "antagonists", "significance of the title", "protagonist", "protagonists",
                        "ending", "endings", "episodes", "premise", "the cases", "recurring characters",
                        "story and setting", "themes and analysis", "trivia", "summary of the film", "story development",
-                       "main cast and characters", "film content", "secondary characters", "minor characters"];
+                       "main cast and characters", "film content", "secondary characters", "minor characters",
+					   "major characters"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
