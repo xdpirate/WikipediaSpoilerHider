@@ -32,7 +32,7 @@
                        "ending", "endings", "episodes", "premise", "the cases", "recurring characters",
                        "story and setting", "themes and analysis", "trivia", "summary of the film", "story development",
                        "main cast and characters", "film content", "secondary characters", "minor characters",
-					   "major characters"];
+					   "major characters", "guest characters", "postgame features"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
