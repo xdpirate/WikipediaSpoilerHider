@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @id             dc09f455-deee-4eec-9660-9da7394b1b71
 // @name           Wikipedia Spoiler Hider
-// @version        1.2.5
+// @version        1.2.6
 // @author         xpdite
 // @description    Hides potential spoilers on Wikipedia
 // @include        /^https?://.*\.wikipedia\.org/wiki/.*$/
@@ -32,7 +32,7 @@
                        "ending", "endings", "episodes", "premise", "the cases", "recurring characters",
                        "story and setting", "themes and analysis", "trivia", "summary of the film", "story development",
                        "main cast and characters", "film content", "secondary characters", "minor characters",
-					   "major characters", "guest characters", "postgame features"];
+					   "major characters", "guest characters", "postgame features", "episode list"];
     } else if (currentURL.indexOf("no.wikipedia.org") !== -1) {
         // Norwegian
         wshToggleText = "Vis eller skjul potensielle spoilers";
