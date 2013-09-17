@@ -11,8 +11,6 @@ I've tested it on hundreds of pages for movies, books and video games, and it's 
 
 Thanks to Jefferson Scher for the help with organizing Wikipedia's shitty HTML.
 
-Mozilla Addons (For Firefox/Mozilla users)
-https://addons.mozilla.org/en-US/firefox/addon/wikipediaspoilerhider/
-
-UserScripts page (For Chrome and Firefox users with Greasemonkey/Scriptish):
-http://userscripts.org/scripts/show/153934
+* Firefox: https://addons.mozilla.org/en-US/firefox/addon/wikipediaspoilerhider/
+* Chrome: Download [output\wikipediaspoilerhider_x.x.x.crx](https://github.com/xdpirate/WikipediaSpoilerHider/tree/master/output) and drag it into the Extensions window in Chrome.
+* Does not currently work in Opera and will never work in Safari unless you compile it yourself.
