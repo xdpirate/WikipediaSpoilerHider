@@ -15,6 +15,6 @@ Download/Install
 =====
 
 * Firefox: https://addons.mozilla.org/en-US/firefox/addon/wikipediaspoilerhider/
-* Chrome: Download [output\wikipediaspoilerhider_x.x.x.crx](https://github.com/xdpirate/WikipediaSpoilerHider/tree/master/output) (click it and then click View Raw) and drag it into the Extensions tab in Chrome
+* Chrome: Install the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) extension, download and save [wsh.js](https://github.com/xdpirate/WikipediaSpoilerHider/raw/master/src/common/wsh.js) somewhere as 'WSH.tamper.js', then drag it into Chrome.
 * Does not currently work in Opera 
 * Will never work in Safari unless you compile it yourself
