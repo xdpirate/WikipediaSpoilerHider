@@ -138,5 +138,3 @@ function setToggle(divId) {
         elem.style.display='none';
     }
 }
-
-//
