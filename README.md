@@ -13,8 +13,5 @@ Thanks to Jefferson Scher for the help with organizing Wikipedia's shitty HTML.
 
 Download/Install
 =====
-
-* Firefox: https://addons.mozilla.org/en-US/firefox/addon/wikipediaspoilerhider/
-* Chrome: Install the [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) extension, download and save [wsh.js](https://github.com/xdpirate/WikipediaSpoilerHider/raw/master/src/common/wsh.js) somewhere as 'WSH.tamper.js', then drag it into Chrome.
-* Does not currently work in Opera 
-* Will never work in Safari unless you compile it yourself
+* Install [Tampermonkey](https://tampermonkey.net/)
+* [Install the script](https://github.com/xdpirate/WikipediaSpoilerHider/raw/master/WikipediaSpoilerHider.user.js)
